@@ -108,5 +108,6 @@ Build the repo and execute the code in the terminal
 ## References
 https://go.dev/blog/using-go-modules  
 https://go.dev/doc/tutorial/create-module  
-https://go.dev/doc/database/
-https://github.com/lib/pq
+https://go.dev/doc/database/  
+https://github.com/lib/pq  
+https://www.postgresql.org/files/documentation/pdf/14/postgresql-14-A4.pdf
