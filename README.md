@@ -50,16 +50,16 @@ Prepare the database for the repo.
 Create a database named **customer**
 
     CREATE DATABASE customer
-    WITH 
-    OWNER = postgres
-    ENCODING = 'UTF8'
-    CONNECTION LIMIT = -1;
+        WITH 
+        OWNER = postgres
+        ENCODING = 'UTF8'
+        CONNECTION LIMIT = -1;
 
 ### Step 6b
 Create a schema named **customer** in customer database.
 
     CREATE SCHEMA customer
-    AUTHORIZATION postgres;
+        AUTHORIZATION postgres;
    
 ### Step 6c
 Create a table called **customer**.
@@ -75,16 +75,16 @@ Create a table called **customer**.
     TABLESPACE pg_default;
 
     ALTER TABLE IF EXISTS customer.customer
-    OWNER to postgres;
+        OWNER to postgres;
 
 ### Step 6d
 Insert few reords to the **customer** table.
 
     INSERT INTO customer.customer(
-	firstname, lastname)
-	VALUES ('John', 'Doe'),
-	('Richard', 'Roe'),
-	('Mark', 'Moe');
+	    firstname, lastname)
+	    VALUES  ('John', 'Doe'),
+	            ('Richard', 'Roe'),
+	            ('Mark', 'Moe');
 
 ### Step 6e
 Create the stored procedure **insertcustomer**
